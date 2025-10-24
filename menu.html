@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html lang="id">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Menu - Mie Ayam</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    
+            <div class="bg-layer" style="background-image:url('mie-bg.jpg')"></div>
+            <header class="navbar">
+            <div class="wrap">
+                <a class="brand" href="index.html">MieAyam.id</a>
+                <nav class="nav">
+                    <a href="index.html">Beranda</a>
+                    <a href="menu.html">Menu</a>
+                    <a href="resep.html">Resep</a>
+                    <a href="kontak.html">Kontak</a>
+                </nav>
+            </div>
+        </header>
+
+        <main class="container">
+            <h1>Menu Populer</h1>
+            <div class="hero-box" style="margin-bottom:12px; padding:12px">
+                <p>Pilihan menu kami disajikan hangat setiap hari. Berikut beberapa favorit pelanggan.</p>
+            </div>
+
+        
+        <div class="simple-grid">
+            <div class="simple-card">
+                <img src="mieoriginal.jpg" alt="Mie Original">
+                <h3>Mie Original</h3>
+                <p>Classic mie ayam sederhana dan nikmat lezat.</p>
+                <p><a class="simple-btn" href="kontak.html">Pesan</a></p>
+            </div>
+
+            <div class="simple-card">
+                <img src="miepangsit.jpg" alt="Mie Pangsit">
+                <h3>Mie + Pangsit</h3>
+                <p>Pangsit goreng & rebus sebagai pelengkap.</p>
+                <p><a class="simple-btn" href="kontak.html">Pesan</a></p>
+            </div>
+
+            <div class="simple-card">
+                <img src="miebakso.jpg" alt="Mie Bakso">
+                <h3>Mie + Bakso</h3>
+                <p>Mie ditambah bakso, pilihan yang mengenyangkan.</p>
+                <p><a class="simple-btn" href="kontak.html">Pesan</a></p>
+            </div>
+        </div>
+
+    
+        <section id="promo" class="promo">
+            <h2>Promo</h2>
+            <p>Diskon 10% kalau beli ditempat.</p>
+            <p><a class="fancy-link cta" href="index.html#kontak">Pesan Sekarang</a></p>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p><a class="fancy-link" href="index.html">Beranda</a> · <a class="fancy-link" href="resep.html">Resep</a></p>
+    </footer>
+
+        
+        <script>
+            document.addEventListener('DOMContentLoaded', function(){
+                document.querySelectorAll('img').forEach(function(img){
+                    img.addEventListener('error', function(){
+                        img.style.display='none';
+                        var p=document.createElement('div'); p.className='img-placeholder'; p.style.height=img.height+'px'; p.innerText='No Image'; img.parentNode.insertBefore(p,img);
+                    });
+                });
+            });
+        </script>
+
+</body>
+</html>

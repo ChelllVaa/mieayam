@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html lang="id">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Resep Mie Ayam</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+            <div class="bg-layer" style="background-image:url('mie-bg.jpg')"></div>
+            <header class="navbar">
+            <div class="wrap">
+                <a class="brand" href="index.html">MieAyam.id</a>
+                <nav class="nav">
+                    <a href="index.html">Beranda</a>
+                    <a href="menu.html">Menu</a>
+                    <a href="resep.html">Resep</a>
+                    <a href="kontak.html">Kontak</a>
+                </nav>
+            </div>
+        </header>
+
+        <main class="container">
+            <div class="hero-box" style="margin-bottom:12px; padding:12px">
+                <h1>Resep Mie Ayam Sederhana</h1>
+                <p>Ikuti langkah-langkah sederhana ini untuk membuat mie ayam di rumah.</p>
+            </div>
+
+        <h3>Bahan</h3>
+        <ul>
+            <li>300g daging ayam cincang</li>
+            <li>3 siung bawang putih</li>
+            <li>1 sdt garam, 1 sdt merica</li>
+            <li>40g tepung tapioka</li>
+        </ul>
+
+        <h3>Langkah</h3>
+        <ol>
+            <li>Campur semua bahan, uleni sampai kalis.</li>
+            <li>Bentuk sesuai selera, rebus sampai matang (mengapung jika bulat).</li>
+            <li>Siapkan kuah kaldu, bumbui dengan garam dan bawang goreng.</li>
+            <li>Sajikan mie dengan ayam cincang dan sayur.</li>
+        </ol>
+
+    <p><a class="fancy-link cta" href="menu.html">Lihat Menu</a></p>
+    </main>
+
+    <footer class="footer">
+        <p><a class="fancy-link" href="index.html">Beranda</a> · <a class="fancy-link" href="menu.html">Menu</a></p>
+    </footer>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function(){
+                document.querySelectorAll('img').forEach(function(img){
+                    img.addEventListener('error', function(){
+                        img.style.display='none';
+                        var p=document.createElement('div'); p.className='img-placeholder'; p.style.height=img.height+'px'; p.innerText='No Image'; img.parentNode.insertBefore(p,img);
+                    });
+                });
+            });
+        </script>
+
+</body>
+</html>
